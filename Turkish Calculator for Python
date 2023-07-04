@@ -8,35 +8,121 @@ def işlem():
             c = '2'
             d = '3'
             e = '4'
-            print("\nYAPMAK İSTEDİĞİNİZ İŞLEMİ SEÇİN")
-            print("(1-Toplama(+))   (2-Çıkarma(-))   (3-Çarpma(*))   (4-Bölme(/))")
-            a = (input("\nİşlem Numarası : "))
-            if a == b:
-                print("\nSayı Girin")
-                girdi_1 = int(input("Birinci Sayı : "))
-                girdi_2 = int(input("İkinci Sayı : "))
-                sonuc = (int(girdi_1)+int(girdi_2))
-                print(sonuc)
-            if a == c:
-                print("\nSayı Girin")
-                girdi_1 = int(input("Birinci Sayı : "))
-                girdi_2 = int(input("İkinci Sayı : "))
-                sonuc = (int(girdi_1)-int(girdi_2))
-                print(sonuc)
-            if a == d:
-                print("\nSayı Girin")
-                girdi_1 = int(input("Birinci Sayı : "))
-                girdi_2 = int(input("İkinci Sayı : "))
-                sonuc = (int(girdi_1)*int(girdi_2))
-                print(sonuc)
-            if a == e:
-                print("\nSayı Girin")
-                girdi_1 = int(input("Birinci Sayı : "))
-                girdi_2 = int(input("İkinci Sayı : "))
-                sonuc = (int(girdi_1)/int(girdi_2))
-                print(sonuc)
+            b_1 = '+'
+            c_1 = '-'
+            d_1 = '*'
+            e_1 = '/'
+            print("\nLütfen İşlem Türünüzü Belirtin")
+            print("\n1-Tam Sayılar 2-Ondalık Sayılar")
+            f = (input("İşlem Türü : "))
+            if f == b:
+                print("\nYAPMAK İSTEDİĞİNİZ İŞLEMİ SEÇİN")
+                print("(1-Toplama(+))   (2-Çıkarma(-))   (3-Çarpma(*))   (4-Bölme(/))")
+                a = (input("\nİşlem Numarası : "))
+                if a == b:
+                    print("\nSayı Girin")
+                    girdi_1 = int(input("Birinci Sayı : "))
+                    girdi_2 = int(input("İkinci Sayı : "))
+                    sonuc = (int(girdi_1)+int(girdi_2))
+                    print("Sonuç : {}".format(sonuc))
+                if a == b_1:
+                    print("\nSayı Girin")
+                    girdi_1 = int(input("Birinci Sayı : "))
+                    girdi_2 = int(input("İkinci Sayı : "))
+                    sonuc = (int(girdi_1)+int(girdi_2))
+                    print("Sonuç : {}".format(sonuc))
+                if a == c:
+                    print("\nSayı Girin")
+                    girdi_1 = int(input("Birinci Sayı : "))
+                    girdi_2 = int(input("İkinci Sayı : "))
+                    sonuc = (int(girdi_1)-int(girdi_2))
+                    print("Sonuç : {}".format(sonuc))
+                if a == c_1:
+                    print("\nSayı Girin")
+                    girdi_1 = int(input("Birinci Sayı : "))
+                    girdi_2 = int(input("İkinci Sayı : "))
+                    sonuc = (int(girdi_1)-int(girdi_2))
+                    print("Sonuç : {}".format(sonuc))
+                if a == d:
+                    print("\nSayı Girin")
+                    girdi_1 = int(input("Birinci Sayı : "))
+                    girdi_2 = int(input("İkinci Sayı : "))
+                    sonuc = (int(girdi_1)*int(girdi_2))
+                    print("Sonuç : {}".format(sonuc))
+                if a == d_1:
+                    print("\nSayı Girin")
+                    girdi_1 = int(input("Birinci Sayı : "))
+                    girdi_2 = int(input("İkinci Sayı : "))
+                    sonuc = (int(girdi_1)*int(girdi_2))
+                    print("Sonuç : {}".format(sonuc))
+                if a == e:
+                    print("\nSayı Girin")
+                    girdi_1 = int(input("Birinci Sayı : "))
+                    girdi_2 = int(input("İkinci Sayı : "))
+                    sonuc = (int(girdi_1)/int(girdi_2))
+                    print("Sonuç : {}".format(sonuc))
+                if a == e_1:
+                    print("\nSayı Girin")
+                    girdi_1 = int(input("Birinci Sayı : "))
+                    girdi_2 = int(input("İkinci Sayı : "))
+                    sonuc = (int(girdi_1)/int(girdi_2))
+                    print("Sonuç : {}".format(sonuc))
+            if f == c:
+                    print("\nYAPMAK İSTEDİĞİNİZ İŞLEMİ SEÇİN")
+                    print("(1-Toplama(+))   (2-Çıkarma(-))   (3-Çarpma(*))   (4-Bölme(/))")
+                    a = (input("\nİşlem Numarası : "))
+                    if a == b:
+                        print("\nSayı Girin")
+                        girdi_1 = float(input("Birinci Sayı : "))
+                        girdi_2 = float(input("İkinci Sayı : "))
+                        sonuc = (float(girdi_1)+float(girdi_2))
+                        print("Sonuç : {}".format(sonuc))
+                    if a == b_1:
+                        print("\nSayı Girin")
+                        girdi_1 = float(input("Birinci Sayı : "))
+                        girdi_2 = float(input("İkinci Sayı : "))
+                        sonuc = (float(girdi_1)+float(girdi_2))
+                        print("Sonuç : {}".format(sonuc))
+                    if a == c:
+                        print("\nSayı Girin")
+                        girdi_1 = float(input("Birinci Sayı : "))
+                        girdi_2 = float(input("İkinci Sayı : "))
+                        sonuc = (float(girdi_1)-float(girdi_2))
+                        print("Sonuç : {}".format(sonuc)) 
+                    if a == c_1:
+                        print("\nSayı Girin")
+                        girdi_1 = float(input("Birinci Sayı : "))
+                        girdi_2 = float(input("İkinci Sayı : "))
+                        sonuc = (float(girdi_1)-float(girdi_2))
+                        print("Sonuç : {}".format(sonuc)) 
+                    if a == d:
+                        print("\nSayı Girin")
+                        girdi_1 = float(input("Birinci Sayı : "))
+                        girdi_2 = float(input("İkinci Sayı : "))
+                        sonuc = (float(girdi_1)*float(girdi_2))
+                        print("Sonuç : {}".format(sonuc))
+                    if a == d_1:
+                        print("\nSayı Girin")
+                        girdi_1 = float(input("Birinci Sayı : "))
+                        girdi_2 = float(input("İkinci Sayı : "))
+                        sonuc = (float(girdi_1)*float(girdi_2))
+                        print("Sonuç : {}".format(sonuc))
+                    if a == e:
+                        print("\nSayı Girin")
+                        girdi_1 = float(input("Birinci Sayı : "))
+                        girdi_2 = float(input("İkinci Sayı : "))
+                        sonuc = (float(girdi_1)/float(girdi_2))
+                        print("Sonuç : {}".format(sonuc))
+                    if a == e_1:
+                        print("\nSayı Girin")
+                        girdi_1 = float(input("Birinci Sayı : "))
+                        girdi_2 = float(input("İkinci Sayı : "))
+                        sonuc = (float(girdi_1)/float(girdi_2))
+                        print("Sonuç : {}".format(sonuc))
         except:
             print("LÜTFEN GEÇERLİ BİR GİRİŞ YAPIN")
+
+                    
 
 
 işlem()
