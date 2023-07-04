@@ -1,0 +1,42 @@
+print(":::Hesap Makinesi:::")
+
+
+def işlem():
+    while True:
+        try:
+            b = '1'
+            c = '2'
+            d = '3'
+            e = '4'
+            print("\nYAPMAK İSTEDİĞİNİZ İŞLEMİ SEÇİN")
+            print("(1-Toplama(+))   (2-Çıkarma(-))   (3-Çarpma(*))   (4-Bölme(/))")
+            a = (input("\nİşlem Numarası : "))
+            if a == b:
+                print("\nSayı Girin")
+                girdi_1 = int(input("Birinci Sayı : "))
+                girdi_2 = int(input("İkinci Sayı : "))
+                sonuc = (int(girdi_1)+int(girdi_2))
+                print(sonuc)
+            if a == c:
+                print("\nSayı Girin")
+                girdi_1 = int(input("Birinci Sayı : "))
+                girdi_2 = int(input("İkinci Sayı : "))
+                sonuc = (int(girdi_1)-int(girdi_2))
+                print(sonuc)
+            if a == d:
+                print("\nSayı Girin")
+                girdi_1 = int(input("Birinci Sayı : "))
+                girdi_2 = int(input("İkinci Sayı : "))
+                sonuc = (int(girdi_1)*int(girdi_2))
+                print(sonuc)
+            if a == e:
+                print("\nSayı Girin")
+                girdi_1 = int(input("Birinci Sayı : "))
+                girdi_2 = int(input("İkinci Sayı : "))
+                sonuc = (int(girdi_1)/int(girdi_2))
+                print(sonuc)
+        except:
+            print("LÜTFEN GEÇERLİ BİR GİRİŞ YAPIN")
+
+
+işlem()
