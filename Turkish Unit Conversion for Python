@@ -1,0 +1,174 @@
+k = 'km'
+h = 'hm'
+d = 'dam'
+m = 'm'
+dm = 'dm'
+c = 'cm'
+mm = 'mm'
+
+def kısaltma():
+    print("\nKısaltmalar:")
+    print("Kilometre = km    Hektometre = hm")
+    print("Dekametre = dam   Metre = m")
+    print("Desimetre = dm    Santimetre = cm")
+    print("Milimetre = mm")
+
+def donusum():
+    while True:
+        try:
+            kısaltma()
+            a = input("\nBirim Kısaltması : ")
+            if a == k:
+                cc = float(input("Sayı : "))
+                b = input("Hangi Birime Dönüştürülecek : ")
+                if b == h:
+                    sonuc = (cc*10)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == d:
+                    sonuc =  (cc*100)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == m:
+                    sonuc = (cc*1000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == dm:
+                    sonuc = (cc*10000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == c:
+                    sonuc = (cc*100000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == mm:
+                    sonuc = (cc*1000000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+            if a == h:
+                cc = float(input("Sayı : "))
+                b = input("Hangi Birime Dönüştürülecek : ")
+                if b == k:
+                    sonuc = (cc/10)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == d:
+                    sonuc = (cc*10)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == m:
+                    sonuc = (cc*100)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == dm:
+                    sonuc = (cc*1000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == c:
+                    sonuc = (cc*10000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == mm:
+                    sonuc = (cc*100000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+            if a == d:
+                cc = float(input("Sayı : "))
+                b = input("Hangi Birime Dönüştürülecek : ")
+                if b == k:
+                    sonuc = (cc/100)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == h:
+                    sonuc = (cc/10)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == m:
+                    sonuc = (cc*10)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == dm:
+                    sonuc = (cc*100)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == c:
+                    sonuc = (cc*1000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == mm:
+                    sonuc = (cc*10000)
+            if a == m:
+                cc = float(input("Sayı : "))
+                b = input("Hangi Birime Dönüştürülecek : ")
+                if b == k:
+                    sonuc = (cc/1000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == h:
+                    sonuc = (cc/100)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == d:
+                    sonuc = (cc/10)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == dm:
+                    sonuc = (cc*10)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == c:
+                    sonuc = (cc*100)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == mm:
+                    sonuc = (cc*1000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+            if a == dm:
+                cc = float(input("Sayı : "))
+                b = input("Hangi Birime Dönüştürülecek : ")
+                if b == k:
+                    sonuc = (cc/10000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == h:
+                    sonuc = (cc/1000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == d:
+                    sonuc = (cc/100)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == m:
+                    sonuc = (cc/10)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == dm:
+                    sonuc = (cc*10)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == c:
+                    sonuc = (cc*100)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == mm:
+                    sonuc = (cc*1000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+            if a == c:
+                cc = float(input("Sayı : "))
+                b = input("Hangi Birime Dönüştürülecek : ")
+                if b == k:
+                    sonuc = (cc/100000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == h:
+                    sonuc = (cc/10000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == d:
+                    sonuc = (cc/1000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == m:
+                    sonuc = (cc/100)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == dm:
+                    sonuc = (cc/10)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == mm:
+                    sonuc = (cc*10)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+            if a == mm:
+                cc = float(input("Sayı : "))
+                b = input("Hangi Birime Dönüştürülecek : ")
+                if b == k:
+                    sonuc = (cc/1000000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == h:
+                    sonuc = (cc/100000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == d:
+                    sonuc = (cc/10000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == m:
+                    sonuc = (cc/1000)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == dm:
+                    sonuc = (cc/100)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+                if b == c:
+                    sonuc = (cc/10)
+                    print("\nDönüşüm : {} {}".format(sonuc,b))
+        except:
+            print("Lütfen Doğru Giriş Yaptığınızdan Emin Olun")
+
+
+donusum()
