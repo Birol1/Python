@@ -1,0 +1,37 @@
+import random
+
+print(":::Try to Answer the Given Questions Correctly:::")
+numbers = [*range(0, 501)]
+operations = ['Addition', 'Subtraction', 'Multiplication', 'Division']
+
+
+def game():
+    while True:
+        try:
+            op = random.choice(operations)
+            num1 = random.choice(numbers)
+            num2 = random.choice(numbers)
+            print("\nOperation: {}".format(op))
+            print("First Number: {}".format(num1))
+            print("Second Number: {}".format(num2))
+            ans = int(input("\nAnswer: "))
+
+            if op == operations[0]:
+                result = num1 + num2
+            elif op == operations[1]:
+                result = num1 - num2
+            elif op == operations[2]:
+                result = num1 * num2
+            elif op == operations[3]:
+                result = num1 / num2
+
+            if result == ans:
+                print("Your Answer Is Correct.")
+            else:
+                print("Your Answer Is Incorrect.")
+                print("Correct Answer: {}".format(result))
+        except:
+            print("Something Went Wrong.")
+            
+            
+game()
