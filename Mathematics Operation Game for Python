@@ -28,10 +28,10 @@ def game():
             if result == ans:
                 print("Your Answer Is Correct.")
             else:
-                print("Your Answer Is Incorrect.")
+                print("Your Answer Is Incorrect!!")
                 print("Correct Answer: {}".format(result))
         except:
-            print("Something Went Wrong.")
+            print("Something Went Wrong!!")
             
             
 game()
