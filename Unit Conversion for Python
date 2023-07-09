@@ -1,0 +1,174 @@
+k = 'km'
+h = 'hm'
+d = 'dam'
+m = 'm'
+dm = 'dm'
+c = 'cm'
+mm = 'mm'
+
+def abbreviations():
+    print("\nAbbreviations:")
+    print("Kilometer = km    Hectometer = hm")
+    print("Decameter = dam   Meter = m")
+    print("Decimeter = dm    Centimeter = cm")
+    print("Millimeter = mm")
+
+def conversion():
+    while True:
+        try:
+            abbreviations()
+            a = input("\nUnit Abbreviation: ")
+            if a == k:
+                cc = float(input("Number: "))
+                b = input("Convert To Which Unit: ")
+                if b == h:
+                    result = (cc*10)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == d:
+                    result =  (cc*100)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == m:
+                    result = (cc*1000)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == dm:
+                    result = (cc*10000)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == c:
+                    result = (cc*100000)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == mm:
+                    result = (cc*1000000)
+                    print("\nConversion: {} {}".format(result,b))
+            if a == h:
+                cc = float(input("Number: "))
+                b = input("Convert To Which Unit: ")
+                if b == k:
+                    result = (cc/10)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == d:
+                    result = (cc*10)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == m:
+                    result = (cc*100)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == dm:
+                    result = (cc*1000)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == c:
+                    result = (cc*10000)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == mm:
+                    result = (cc*100000)
+                    print("\nConversion: {} {}".format(result,b))
+            if a == d:
+                cc = float(input("Number: "))
+                b = input("Convert To Which Unit: ")
+                if b == k:
+                    result = (cc/100)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == h:
+                    result = (cc/10)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == m:
+                    result = (cc*10)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == dm:
+                    result = (cc*100)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == c:
+                    result = (cc*1000)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == mm:
+                    result = (cc*10000)
+            if a == m:
+                cc = float(input("Number: "))
+                b = input("Convert To Which Unit: ")
+                if b == k:
+                    result = (cc/1000)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == h:
+                    result = (cc/100)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == d:
+                    result = (cc/10)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == dm:
+                    result = (cc*10)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == c:
+                    result = (cc*100)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == mm:
+                    result = (cc*1000)
+                    print("\nConversion: {} {}".format(result,b))
+            if a == dm:
+                cc = float(input("Number: "))
+                b = input("Convert To Which Unit: ")
+                if b == k:
+                    result = (cc/10000)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == h:
+                    result = (cc/1000)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == d:
+                    result = (cc/100)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == m:
+                    result = (cc/10)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == dm:
+                    result = (cc*10)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == c:
+                    result = (cc*100)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == mm:
+                    result = (cc*1000)
+                    print("\nConversion: {} {}".format(result,b))
+            if a == c:
+                cc = float(input("Number: "))
+                b = input("Convert To Which Unit: ")
+                if b == k:
+                    result = (cc/100000)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == h:
+                    result = (cc/10000)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == d:
+                    result = (cc/1000)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == m:
+                    result = (cc/100)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == dm:
+                    result = (cc/10)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == mm:
+                    result = (cc*10)
+                    print("\nConversion: {} {}".format(result,b))
+            if a == mm:
+                cc = float(input("Number: "))
+                b = input("Convert To Which Unit: ")
+                if b == k:
+                    result = (cc/1000000)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == h:
+                    result = (cc/100000)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == d:
+                    result = (cc/10000)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == m:
+                    result = (cc/1000)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == dm:
+                    result = (cc/100)
+                    print("\nConversion: {} {}".format(result,b))
+                if b == c:
+                    result = (cc/10)
+                    print("\nConversion: {} {}".format(result,b))
+        except:
+            print("Please Make Sure You Enter Correct Input.")
+
+
+conversion()
