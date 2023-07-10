@@ -1,0 +1,13 @@
+print(":::Exponentiation of a Number:::")
+
+def ussu():
+    while True:
+        try:
+            a = int(input("\nLower : "))
+            b = int(input("Exponent : "))
+            sonuc = (a**b)
+            print("\nEXAMPLE OF {} IS {} EQUAL : {}".format(a,b,sonuc))
+        except:
+            print("Please Enter A Valid Login!!")
+
+ussu()
