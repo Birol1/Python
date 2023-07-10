@@ -3,18 +3,18 @@ from random import randint
 def oyun():
     rand=randint(1, 100)
     while True:
-        sayi = int(input("1 İle 100 Arasında Değer Girin : "))
+        sayi = int(input("Enter Value Between 1 and 100 : "))
         if sayi == 0:
-            print("Oyunu İptal Ettiniz")
+            print("You Canceled the Game")
             break
         elif sayi < rand:
-            print("Daha Yüksek Bir Sayı Girin")
+            print("Enter a Higher Number")
             continue
         elif sayi > rand:
-            print("Daha Düşük Bir Sayı Girin")
+            print("Enter a Lower Number")
             continue
         else:
-            print("TEBRİKLER!! Rastele seçilen sayı {0}!".format(rand))
+            print("CONGRATULATIONS!! Randomly Selected Number {0}!".format(rand))
             rand=randint(1, 100)
 
 oyun()
