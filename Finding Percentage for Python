@@ -1,0 +1,14 @@
+def bulma():
+    global x
+    global y
+    while True:
+        try:
+            x = int(input("\nX Number : "))
+            y = int(input("Y Number : "))
+            sonuc = (x * y / 100)
+            print("")
+            print("Number of {} Number of {} : %{} ".format(y,x,sonuc))
+        except:
+            print("Please Sign In A Valid Login!!")
+
+bulma()
