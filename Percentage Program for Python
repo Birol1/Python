@@ -1,0 +1,14 @@
+def yuzde():
+    global x
+    global y
+    while True:
+        try:
+            x = int(input("\nNumber : "))
+            y = int(input("Percentage : "))
+            sonuc = (x / 100 * y)
+            print("")
+            print("%{} of {} Equals : {}".format(x,y,sonuc))
+        except:
+            print("Please Enter A Valid Login!!")
+
+yuzde()
