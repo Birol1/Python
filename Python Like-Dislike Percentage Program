@@ -1,0 +1,26 @@
+def bulma():
+    global x
+    global y
+    global toplam
+    global sonuc_a
+    global sonuc_b
+    while True:
+        try:
+            x = int(input("\nLike : "))
+            y = int(input("Dislike : "))
+            toplam = (x + y)
+            sonuc_a = (x / toplam) * 100
+            sonuc_b = (y / toplam) * 100
+            print("\nPercentage of Likes : %{}".format(sonuc_a))
+            print("Percentage of Dislikes : %{}".format(sonuc_b))
+            if sonuc_a > 50:
+                print("\nThe Percentage of Likes Is Pretty Good")
+            elif sonuc_b > 50:
+                print("\nThe Like Percentage Could Have Been Better")
+            else:
+                print("\nPercentages in Balance")
+        except:
+            print("Please Enter A Valid Login!!")
+
+
+bulma()
