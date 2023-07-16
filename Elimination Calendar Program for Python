@@ -1,0 +1,99 @@
+import random
+
+def eleme():
+    while True:
+        try:
+            print("\n8'li Eleme")
+            girdi1 = input("Input 1 : ")
+            girdi2 = input("Input 2 : ")
+            girdi3 = input("Input 3 : ")
+            girdi4 = input("Input 4 : ")
+            girdi5 = input("Input 5 : ")
+            girdi6 = input("Input 6 : ")
+            girdi7 = input("Input 7 : ")
+            girdi8 = input("Input 8 : ")
+            list1 = [girdi1, girdi2, girdi3, girdi4, girdi5, girdi6, girdi7, girdi8]
+            
+            b = random.choice(list1)
+            list1.remove(b)
+            c = random.choice(list1)
+            list1.remove(c)
+            d = random.choice(list1)
+            list1.remove(d)
+            e = random.choice(list1)
+            list1.remove(e)
+            f = random.choice(list1)
+            list1.remove(f)
+            g = random.choice(list1)
+            list1.remove(g)
+            h = random.choice(list1)
+            list1.remove(h)
+            ı = random.choice(list1)
+            list1.remove(ı)
+            
+            print("\n::Quarter Finals::")
+            print("1-{}   2-{}".format(b, c))
+            sec1 = int(input("Choose : "))
+            if sec1 == 1:
+                sec1 = b
+            if sec1 == 2:
+                sec1 = c
+            
+            print("1-{}   2-{}".format(d, e))
+            sec2 = int(input("Choose : "))
+            if sec2 == 1:
+                sec2 = d
+            if sec2 == 2:
+                sec2 = e
+            
+            print("1-{}   2-{}".format(f, g))
+            sec3 = int(input("Choose : "))
+            if sec3 == 1:
+                sec3 = f
+            if sec3 == 2:
+                sec3 = g
+            
+            print("1-{}   2-{}".format(h, ı))
+            sec4 = int(input("Choose : "))
+            if sec4 == 1:
+                sec4 = h
+            if sec4 == 2:
+                sec4 = ı
+            
+            list1_ = [sec1, sec2, sec3, sec4]
+            x = random.choice(list1_)
+            list1_.remove(x)
+            y = random.choice(list1_)
+            list1_.remove(y)
+            t = random.choice(list1_)
+            list1_.remove(t)
+            z = random.choice(list1_)
+            list1_.remove(z)
+            
+            print("\n::Semi Final::")
+            print("1-{}   2-{}".format(x, y))
+            sec_ = int(input("Choose : "))
+            if sec_ == 1:
+                sec_ = x
+            if sec_ == 2:
+                sec_ = y
+            
+            print("1-{}   2-{}".format(t, z))
+            sec_1 = int(input("Choose : "))
+            if sec_1 == 1:
+                sec_1 = t
+            if sec_1 == 2:
+                sec_1 = z
+            
+            print(":::Final:::")
+            print("1-{}  2-{}".format(sec_, sec_1))
+            fsec = int(input("Choose : "))
+            if fsec == 1:
+                print("\nWinner : {}".format(sec_))
+            if fsec == 2:
+                print("\nWinner : {}".format(sec_1))
+        
+        except:
+            print("Please Enter A Valid Login!!")
+
+eleme()
