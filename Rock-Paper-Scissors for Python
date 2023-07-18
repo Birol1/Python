@@ -1,0 +1,84 @@
+import random
+
+liste = ['Rock', 'Paper', 'Scissors']
+
+score = 0
+bot_score = 0
+
+def game():
+    user = input("Username: ")
+    global score, bot_score  # Declare score and bot_score as global variables
+
+    while True:
+        try:
+            print("\n1-Rock 2-Paper 3-Scissors")
+            x = int(input("Choose: "))
+            b = random.choice(liste)
+
+            if x == 1 and b == liste[0]:
+                print("Bot: {}".format(b))
+                print("It's a tie")
+                print("\n\n{} : {} \nBot : {}".format(user, score, bot_score))
+            elif x == 1 and b == liste[1]:
+                print("Bot: {}".format(b))
+                print("Bot wins")
+                bot_score += 1  # Increment bot_score
+                print("\n\n{} : {} \nBot : {}".format(user, score, bot_score))
+                if bot_score == 3:
+                    print("Bot wins the game")
+                    break
+            elif x == 1 and b == liste[2]:
+                print("Bot: {}".format(b))
+                print("{} wins".format(user))
+                score += 1  # Increment score
+                print("\n\n{} : {} \nBot : {}".format(user, score, bot_score))
+                if score == 3:
+                    print("{} wins the game".format(user))
+                    break
+            elif x == 2 and b == liste[0]:
+                print("Bot: {}".format(b))
+                print("{} wins".format(user))
+                score += 1  # Increment score
+                print("\n\n{} : {} \nBot : {}".format(user, score, bot_score))
+                if score == 3:
+                    print("{} wins the game".format(user))
+                    break
+            elif x == 2 and b == liste[1]:
+                print("Bot: {}".format(b))
+                print("It's a tie")
+                print("\n\n{} : {} \nBot : {}".format(user, score, bot_score))
+            elif x == 2 and b == liste[2]:
+                print("Bot: {}".format(b))
+                print("Bot wins")
+                bot_score += 1  # Increment bot_score
+                print("\n\n{} : {} \nBot : {}".format(user, score, bot_score))
+                if bot_score == 3:
+                    print("Bot wins the game")
+                    break
+            elif x == 3 and b == liste[0]:
+                print("Bot: {}".format(b))
+                print("Bot wins")
+                bot_score += 1  # Increment bot_score
+                print("\n\n{} : {} \nBot : {}".format(user, score, bot_score))
+                if bot_score == 3:
+                    print("Bot wins the game")
+                    break
+            elif x == 3 and b == liste[1]:
+                print("Bot: {}".format(b))
+                print("{} wins".format(user))
+                score += 1  # Increment score
+                print("\n\n{} : {} \nBot : {}".format(user, score, bot_score))
+                if score == 3:
+                    print("{} wins the game".format(user))
+                    break
+            elif x == 3 and b == liste[2]:
+                print("Bot: {}".format(b))
+                print("It's a tie")
+                print("\n\n{} : {} \nBot : {}".format(user, score, bot_score))
+            else:
+                print("Invalid input! Please enter 1, 2, or 3.")
+
+        except ValueError:
+            print("Invalid input! Please enter a number.")
+
+game()
